@@ -122,9 +122,9 @@ body {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-  color: #212529;
+  color: #fff;
   text-align: left;
-  background-color: #fff;
+  background-color: #151515;
 }
 
 [tabindex="-1"]:focus {
@@ -8353,7 +8353,7 @@ a.text-dark:focus, a.text-dark:hover {
 }
 
 .text-muted {
-  color: #868e96 !important;
+  color: #fff !important;
 }
 
 .text-hide {

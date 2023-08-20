@@ -47,4 +47,25 @@
     $(".navbar").removeClass("d-none");
   })
 
+    const videoSrc = document.querySelector("https://www.loom.com/share/5c31c268f44349308e53447c3d6908f9?sid=3034b20b-c1fc-4ee4-ae5b-b7288ddcb0a0");
+    const videoTag = document.querySelector("#video-tag");
+    const inputTag = document.querySelector("#input-tag");
+
+    inputTag.addEventListener('change',  readVideo)
+
+    function readVideo(event) {
+      console.log(event.target.files)
+      if (event.target.files && event.target.files[0]) {
+        var reader = new FileReader();
+
+        reader.onload = function(e) {
+          console.log('loaded')
+          videoSrc.src = e.target.result
+          videoTag.load()
+        }.bind(this)
+
+        reader.readAsDataURL(event.target.files[0]);
+      }
+    }
+
 })(jQuery); // End of use strict

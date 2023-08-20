@@ -124,6 +124,7 @@ header.masthead .intro-text .intro-heading {
   position: relative;
   padding: 0;
   list-style: none;
+  color: #fff
 }
 
 .timeline:before {
@@ -589,6 +590,7 @@ section#contact :-ms-input-placeholder {
     right: 0;
     margin: 0 0 15px;
     .portfolio-link {
+    color: #fff;
       position: relative;
       display: block;
       max-width: 400px;
